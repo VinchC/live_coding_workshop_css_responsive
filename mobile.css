@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#featured-posts {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#featured-posts h2,
+#featured-posts article:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+#featured-posts > article {
+  width: 100%;
+  margin: 0;
+}
+
+article:nth-child(6) {
+  display: inherit;
+}
